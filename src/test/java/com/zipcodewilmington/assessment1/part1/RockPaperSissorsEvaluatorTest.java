@@ -6,7 +6,7 @@ import org.junit.Test;
 /**
  * Created by leon on 2/16/18.
  */
-public class RockPaperSissorsEvaluatorTest {
+public class RockPaperSissorsEvaluatorTest {          //*** don't edit the tests.....don't edit the tests....don't edit the tests........
     @Test
     public void getWinningMoveTest() {
         // Given
