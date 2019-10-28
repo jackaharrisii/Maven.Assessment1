@@ -129,7 +129,7 @@ public class ArrayUtils {
      * given two arrays `objectArray` and `objectArrayToAdd`, return an array containing all elements in `objectArray` and `objectArrayToAdd`
      */
     public static Object[] mergeArrays(Object[] objectArray, Object[] objectArrayToAdd) {  //this is probably failing for the same reason as the remove value test - formatting issue???
-        Object[] output = new Object[objectArray.length + objectArrayToAdd.length];
+        Object[] output = new Object[objectArray.length + objectArrayToAdd.length];        //I'll come back to these two if I have time at the end
         for (int i = 0; i < objectArray.length; i++){
             output[i] = objectArray[i];
         }
