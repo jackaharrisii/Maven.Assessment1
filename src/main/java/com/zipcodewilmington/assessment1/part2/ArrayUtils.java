@@ -99,6 +99,7 @@ public class ArrayUtils {
         return output;
 
     }
+    //---------------------------FOR POSTERITY-----------------------------------
 //        Arrays.sort(objectArray);                        //first, sort the array so that we can move through it linearly
 //        int minOcc = objectArray.length;                 //counts the object with the least number of occurrences - defaults to the length of the entire array
 //        int thisOcc = 1;                                 //counts the occurrences of the current object

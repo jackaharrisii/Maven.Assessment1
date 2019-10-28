@@ -13,14 +13,20 @@ public class PetOwner {
      */
 
     private String name;
-//    private Pet[] pets;
+    private Pet pets;
 
-    private ArrayList<Pet> petFamily = new ArrayList<Pet>();
+//    private ArrayList<Pet> petFamily = new ArrayList<Pet>();
 
     public PetOwner(String name, Pet... pets) {
         this.name = name;
+
+        //ALL THE WAYS SO FAR THAT HAVEN'T WORKED........
+//        for(Pet item:pets){
+//            this.pets.add(item);
+//        }
+//        this.pets = Arrays.asList(pets);
+//        this.pets = pets;
 //        petFamily.addAll( new Pet());
-//        this.name = name;
 //        for (int i = 0; i < pets.length; i++) {
 //            petFamily.add(pets);
 //        }
