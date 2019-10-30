@@ -1,6 +1,8 @@
 package com.zipcodewilmington.assessment1.part2;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by leon on 2/16/18.
@@ -27,18 +29,13 @@ public class ArrayUtils {
      * Given an array of objects, name `objectArray`, and an object `objectToRemove`, return an array of objects with identical contents excluding `objectToRemove`
      */
     public static Object[] removeValue(Object[] objectArray, Object objectToRemove) {
-        Object[] output = new Object[objectArray.length - getNumberOfOccurrences(objectArray,objectToRemove)];  //create a new Object array of length (original minus number to remove)
-        int count = 0;  //count will note the current position in the new array as we loop through the old array
+        List<Object> output = new ArrayList<>();  //create a new Object array of length (original minus number to remove)
         for (int i = 0; i < objectArray.length; i++){    //iterate through the old array
-            if (objectArray[i] != objectToRemove){       //if the item is being kept
-                output[count] = objectArray[i];          //add it to the new array
-                count++;                                 //then advance the counter to the next index in the new array
+            if (!objectArray[i].equals(objectToRemove)){       //if the item is being kept
+                output.add(objectArray[i]);
             }
         }
-        System.out.println(Arrays.toString(objectArray));
-        System.out.println(objectToRemove);
-        System.out.println(Arrays.toString(output));
-        return output;                                   //i'm getting what appears in the sout to be the correct answer, but it's not clearing the test - formatting issue? - come back to this
+        return output.toArray();
     }
 
     /**
