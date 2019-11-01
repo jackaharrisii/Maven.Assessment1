@@ -35,7 +35,9 @@ public class ArrayUtils {
                 output.add(objectArray[i]);
             }
         }
-        return output.toArray();
+        Object[] outputArray = output.toArray(new Object[output.size()]);
+        Integer[] integerArray = (Integer[]) Arrays.copyOf(outputArray, outputArray.length, Integer[].class);
+        return integerArray;
     }
 
     /**
@@ -134,9 +136,10 @@ public class ArrayUtils {
         for (int j = 0; j < objectArrayToAdd.length; j++){
             output[j + objectArray.length] = objectArrayToAdd[j];
         }
-        System.out.println(Arrays.toString(objectArray));
-        System.out.println(Arrays.toString(objectArrayToAdd));
-        System.out.println(Arrays.toString(output));
-        return output;
+//        System.out.println(Arrays.toString(objectArray));
+//        System.out.println(Arrays.toString(objectArrayToAdd));
+//        System.out.println(Arrays.toString(output));
+        Integer[] integerArray = (Integer[]) Arrays.copyOf(output, output.length, Integer[].class);
+        return integerArray;
     }
 }

@@ -60,7 +60,7 @@ public abstract class Pet implements Animal {
      */
     public void setOwner(PetOwner newPetOwner) {
         this.owner = newPetOwner;
-//        newPetOwner.addPet(this.Pet);
+        newPetOwner.addPet(this);
 //        this.
     }
 
@@ -68,6 +68,7 @@ public abstract class Pet implements Animal {
      * @return PetOwner object whose composite `pets` collection contains this Pet instance
      */
     public PetOwner getOwner() {
+
         return this.owner;
     }
 }
